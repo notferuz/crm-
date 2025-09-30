@@ -1,0 +1,19 @@
+/* src/styles/main.css */
+:root {
+    --primary-color: #007bff;
+    --dark-bg: #1a1a1a;
+    --light-text: #f0f0f0;
+    --dark-text: #333333;
+    --sidebar-width: 260px;
+    --border-color: #333;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fdfdff;
+  }

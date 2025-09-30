@@ -1,0 +1,629 @@
+/* Основные стили */
+.rental-detail-page {
+  min-height: 100vh;
+  padding: 24px;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.receipt-container {
+  width: 100%;
+}
+
+/* Кнопка назад */
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #e3e7ef;
+  border-radius: 12px;
+  padding: 12px 20px;
+  color: #397DFF;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+}
+
+.back-btn:hover {
+  background: #f7fbff;
+  border-color: #397DFF;
+  transform: translateY(-1px);
+}
+
+/* Чек */
+.receipt {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  border: 1px solid #e3e7ef;
+  font-family: 'Courier New', monospace;
+  position: relative;
+  text-align: left;
+}
+
+/* Заголовок чека */
+.receipt-header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #e3e7ef;
+}
+
+.receipt-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.logo-image {
+  height: 60px;
+  width: auto;
+  max-width: 200px;
+  display: block;
+}
+
+.logo-image::after {
+  content: none !important;
+}
+
+.receipt-type {
+  background: #397DFF;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+/* Информация о чеке */
+.receipt-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: #f7f9fb;
+  border-radius: 12px;
+}
+
+.receipt-number {
+  font-size: 16px;
+  color: #1a2138;
+}
+
+.receipt-number strong {
+  font-size: 20px;
+  color: #397DFF;
+}
+
+.receipt-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #7b8494;
+  font-size: 14px;
+}
+
+/* Статус */
+.receipt-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 12px;
+  background: #f7f9fb;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Секции */
+.receipt-section {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #e3e7ef;
+}
+
+.receipt-section:last-of-type {
+  border-bottom: none;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #1a2138;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.section-title svg {
+  color: #397DFF;
+}
+
+/* Клиент */
+.client-info {
+  padding-left: 24px;
+}
+
+.client-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a2138;
+  margin-bottom: 4px;
+}
+
+.client-phone {
+  color: #7b8494;
+  font-size: 14px;
+}
+
+/* Период аренды */
+.rental-period {
+  padding-left: 24px;
+}
+
+.period-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.period-item.total-days {
+  font-weight: 600;
+  color: #397DFF;
+  border-top: 1px solid #e3e7ef;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.period-label {
+  color: #7b8494;
+}
+
+.period-value {
+  color: #1a2138;
+  font-weight: 500;
+}
+
+/* Техника */
+.equipment-list {
+  padding-left: 24px;
+}
+
+.equipment-item {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f7f9fb;
+  border-radius: 8px;
+  border-left: 4px solid #397DFF;
+}
+
+.equipment-name {
+  font-weight: 600;
+  color: #1a2138;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.equipment-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #7b8494;
+}
+
+.equipment-total {
+  font-weight: 600;
+  color: #397DFF;
+  text-align: right;
+  font-size: 14px;
+}
+
+.no-equipment {
+  text-align: center;
+  color: #7b8494;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* Итого */
+.receipt-total {
+  margin: 24px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #397DFF 0%, #265ecf 100%);
+  border-radius: 12px;
+  color: #fff;
+}
+
+.total-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.total-amount {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Комментарий */
+.receipt-comment {
+  margin: 20px 0;
+  padding: 16px;
+  background: #fffbe6;
+  border-radius: 8px;
+  border-left: 4px solid #ffd700;
+}
+
+.comment-label {
+  font-weight: 600;
+  color: #1a2138;
+  margin-bottom: 6px;
+}
+
+.comment-text {
+  color: #7b8494;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Админ */
+.receipt-admin {
+  text-align: center;
+  color: #7b8494;
+  font-size: 14px;
+  margin: 20px 0;
+  padding: 12px;
+  background: #f7f9fb;
+  border-radius: 8px;
+}
+
+/* Подпись */
+.receipt-footer {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 2px dashed #e3e7ef;
+}
+
+.receipt-line {
+  height: 1px;
+  background: #e3e7ef;
+  margin: 16px 0;
+}
+
+.receipt-footer p {
+  color: #7b8494;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.print-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #397DFF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 12px;
+}
+
+.print-btn:hover {
+  background: #265ecf;
+  transform: translateY(-1px);
+}
+
+/* Загрузка и ошибки */
+.receipt-loading, .receipt-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 16px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e3e7ef;
+  border-top: 4px solid #397DFF;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.receipt-error {
+  color: #ff3b30;
+}
+
+.receipt-error svg {
+  font-size: 48px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .rental-detail-page {
+    padding: 16px;
+  }
+  
+  .receipt {
+    padding: 24px;
+  }
+  
+  .logo-image {
+    height: 50px;
+  }
+  
+  .receipt-info {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  
+  .equipment-details {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .total-line {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .receipt {
+    padding: 20px;
+  }
+  
+  .logo-image {
+    height: 40px;
+  }
+  
+  .client-info, .rental-period, .equipment-list {
+    padding-left: 16px;
+  }
+}
+
+/* Стили для печати */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+  
+  @page {
+    size: A4;
+    margin: 0.3in;
+  }
+  
+  .rental-detail-page {
+    background: #fff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    font-size: 10px !important;
+  }
+  
+  .receipt-container {
+    width: 100% !important;
+    max-width: none !important;
+  }
+  
+  .back-btn, .print-btn {
+    display: none !important;
+  }
+  
+  .receipt {
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+    border-radius: 0 !important;
+    padding: 8px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    font-size: 10px !important;
+    text-align: left !important;
+  }
+  
+  .receipt-header {
+    border-bottom: 1px solid #000 !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+    margin-bottom: 8px !important;
+    padding-bottom: 6px !important;
+  }
+  
+  .receipt-logo {
+    margin-bottom: 4px !important;
+  }
+  
+  .logo-image {
+    height: 25px !important;
+    max-width: 100px !important;
+    display: block !important;
+  }
+  
+  .logo-image::after {
+    content: none !important;
+  }
+  
+  .receipt-type {
+    background: #000 !important;
+    color: #fff !important;
+    padding: 3px 8px !important;
+    font-size: 8px !important;
+    border-radius: 3px !important;
+  }
+  
+  .receipt-info {
+    padding: 6px !important;
+    margin-bottom: 6px !important;
+    font-size: 9px !important;
+  }
+  
+  .receipt-number {
+    font-size: 9px !important;
+  }
+  
+  .receipt-number strong {
+    font-size: 11px !important;
+  }
+  
+  .receipt-date {
+    font-size: 8px !important;
+  }
+  
+  .receipt-status {
+    padding: 4px !important;
+    margin-bottom: 8px !important;
+    font-size: 9px !important;
+  }
+  
+  .receipt-section {
+    border-bottom: 1px solid #000 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 6px !important;
+    padding-bottom: 4px !important;
+  }
+  
+  .section-title {
+    font-size: 10px !important;
+    margin-bottom: 4px !important;
+  }
+  
+  .client-info, .rental-period, .equipment-list {
+    padding-left: 12px !important;
+  }
+  
+  .client-name {
+    font-size: 10px !important;
+    margin-bottom: 2px !important;
+  }
+  
+  .client-phone {
+    font-size: 8px !important;
+  }
+  
+  .period-item {
+    font-size: 8px !important;
+    margin-bottom: 2px !important;
+  }
+  
+  .period-item.total-days {
+    padding-top: 2px !important;
+    margin-top: 2px !important;
+    font-size: 9px !important;
+  }
+  
+  .equipment-item {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 3px !important;
+    padding: 4px !important;
+    font-size: 8px !important;
+  }
+  
+  .equipment-name {
+    font-size: 9px !important;
+    margin-bottom: 2px !important;
+  }
+  
+  .equipment-details {
+    font-size: 7px !important;
+    margin-bottom: 2px !important;
+  }
+  
+  .equipment-total {
+    font-size: 8px !important;
+  }
+  
+  .receipt-total {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin: 8px 0 !important;
+    padding: 6px !important;
+    background: #000 !important;
+    color: #fff !important;
+  }
+  
+  .total-line {
+    font-size: 11px !important;
+  }
+  
+  .total-amount {
+    color: #fff !important;
+    font-size: 12px !important;
+  }
+  
+  .receipt-comment {
+    margin: 6px 0 !important;
+    padding: 4px !important;
+    font-size: 8px !important;
+  }
+  
+  .comment-label {
+    font-size: 8px !important;
+    margin-bottom: 2px !important;
+  }
+  
+  .comment-text {
+    font-size: 7px !important;
+  }
+  
+  .receipt-admin {
+    font-size: 8px !important;
+    margin: 6px 0 !important;
+    padding: 3px !important;
+  }
+  
+  .receipt-footer {
+    border-top: 1px solid #000 !important;
+    page-break-before: avoid !important;
+    break-before: avoid !important;
+    margin-top: 6px !important;
+    padding-top: 4px !important;
+  }
+  
+  .receipt-footer p {
+    font-size: 8px !important;
+    margin: 3px 0 !important;
+  }
+  
+  .receipt-line {
+    margin: 4px 0 !important;
+  }
+}

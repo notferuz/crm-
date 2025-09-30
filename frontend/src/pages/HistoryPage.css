@@ -1,0 +1,12 @@
+.history-page { padding: 32px; }
+.history-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.07); }
+.history-filters { display:flex; gap:8px; margin:12px 0 16px 0; }
+.hf-btn { padding:8px 12px; border:1px solid #e3e7ef; border-radius:10px; background:#fff; cursor:pointer; color:#1a2138; }
+.hf-btn.active { background:#397DFF; color:#fff; border-color:#397DFF; }
+.history-table th, .history-table td { padding: 12px 10px; border-bottom: 1px solid #f0f2f7; text-align: left; }
+.history-table th { background: #f8fafd; font-weight: 600; color: #397DFF; }
+.history-table tr:last-child td { border-bottom: none; }
+.history-client-link { cursor: pointer; color: #397DFF; text-decoration: underline; }
+.history-delete-btn, .history-detail-btn { background: none; border: none; cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.15s; }
+.history-delete-btn:hover { background: #ffeaea; }
+.history-detail-btn:hover { background: #e6f0ff; } 

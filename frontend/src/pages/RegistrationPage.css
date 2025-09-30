@@ -1,0 +1,78 @@
+.registration-page-centered {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.registration-form-ui {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+  padding: 36px 32px 28px 32px;
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.reg-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #397DFF;
+}
+
+.reg-input {
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.reg-input:focus {
+  border: 1.5px solid #397DFF;
+}
+
+.reg-btn {
+  background: linear-gradient(90deg, #397DFF 0%, #00C853 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+.reg-btn:hover {
+  background: linear-gradient(90deg, #00C853 0%, #397DFF 100%);
+}
+
+.registration-error {
+  color: #ff3b30;
+  text-align: center;
+  font-size: 0.98rem;
+  margin-top: 4px;
+}
+.registration-success {
+  color: #00C853;
+  text-align: center;
+  font-size: 0.98rem;
+  margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+  .registration-form-ui {
+    padding: 18px 8px 16px 8px;
+    max-width: 98vw;
+  }
+  .reg-title {
+    font-size: 1.2rem;
+  }
+} 

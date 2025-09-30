@@ -1,0 +1,7 @@
+/* src/components/layout/Content.css */
+.content {
+    flex-grow: 1; /* Занимает все оставшееся пространство */
+    padding: 0; /* Убираем лишний верхний отступ */
+    background-color: #F4F9FD;
+    overflow-y: auto; /* Добавляет прокрутку, если контента много */
+  }
